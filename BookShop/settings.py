@@ -128,10 +128,6 @@ USE_TZ = True
 
 
 
-#Set Static files directories
-STATICFILES_DIRS = [
-    BASE_DIR / "assets",
-]
 
 #Static files config
 STATIC_URL = '/static/'

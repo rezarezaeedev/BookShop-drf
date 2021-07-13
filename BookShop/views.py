@@ -9,6 +9,7 @@ def home(request):
      <br/>
      <p>This website programed by django drf for practice API web</p>
      <p>You can use these path's for using api's</p>
+     <a href='admin/'>Admin panel</a><br/><br/>
      <a href='api/v1/get-all-data/'>Get all Books (GET)</a><br/><br/>
      <a href='api/v1/get-fav-data/'>Get all favorite Books (GET)</a><br/><br/>
      <a href='api/v1/create-data/'>Create a Book with json data taken (POST)</a><br/><br/>
@@ -20,8 +21,8 @@ def home(request):
      <br><hr><br>
      
    </center>    
-     <h1>Correct json data</h1>
-   <pre style='text-align: left;font-size=20;'>
+     <h1>Correct format json data</h1>
+   <pre style='text-align: left;font-size=50;'>
         {
             "name": "ترفند های پایتون",
             "author": "محمد بابازاده",

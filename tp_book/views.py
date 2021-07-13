@@ -69,11 +69,11 @@ class CreateData(APIView):
 
 class SerachData(APIView):
     def get(self, request):
-        author       =   request.GET.get('author', default='')
-        name       =   request.GET.get('name', default='')
+        author       =   request.GET.get('author', default='*'*30)
+        desc       =   request.GET.get('desc', default='*'*10)
+        name       =   request.GET.get('name', default='*'*10)
         lookup = (
-            # Q(desc__icontains=name) |
-            # Q(desc__icontains=author) |
+            Q(desc__icontains=desc) |
             Q(author__icontains=author) |
             Q(name__icontains = name)
         )
